@@ -43,17 +43,18 @@
 <meta name="keywords" content="工具">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建自己的博客">
-<meta property="og:url" content="http://yoursite.com/2019/06/23/搭建自己的博客/index.html">
+<meta property="og:url" content="https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/index.html">
 <meta property="og:site_name" content="潜龙慎用">
 <meta property="og:description" content="通过hexo+github搭建属于自己的博客">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2019/06/23/搭建自己的博客/搭建自己的博客.assets/修改.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/06/23/搭建自己的博客/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2.assets/%E4%BF%AE%E6%94%B9theme.png">
-<meta property="og:updated_time" content="2019-06-23T06:43:11.011Z">
+<meta property="og:image" content="https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/修改.jpg">
+<meta property="og:image" content="https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/%E4%BF%AE%E6%94%B9theme.png">
+<meta property="og:image" content="https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/参数列表.jpg">
+<meta property="og:updated_time" content="2019-06-23T07:37:13.335Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建自己的博客">
 <meta name="twitter:description" content="通过hexo+github搭建属于自己的博客">
-<meta name="twitter:image" content="http://yoursite.com/2019/06/23/搭建自己的博客/搭建自己的博客.assets/修改.jpg">
+<meta name="twitter:image" content="https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/修改.jpg">
     
         <link rel="alternate" type="application/atom+xml" title="潜龙慎用" href="/atom.xml">
     
@@ -157,7 +158,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -256,7 +257,7 @@
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="搭建自己的博客.assets/修改.jpg" alt="修改" title>
+                    <img src="/2019/06/23/搭建自己的博客/修改.jpg" alt="修改" title>
                 </div>
                 <div class="image-caption">修改</div>
             </figure>
@@ -279,7 +280,7 @@
 <li><p>修改主题名称为tomotoes</p>
 </li>
 <li><p>修改 <code>D:\blog\_config.yml</code> 中theme并保存</p>
-<p><img src="%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2.assets/%E4%BF%AE%E6%94%B9theme.png" alt="修改theme"></p>
+<p><img src="/2019/06/23/搭建自己的博客/%E4%BF%AE%E6%94%B9theme.png" alt="修改theme"></p>
 </li>
 <li><p>然后在blog目录下打开git输入hexo s，本地预览效果.</p>
 </li>
@@ -337,8 +338,22 @@
 <p>文件开头</p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">---</span><br><span class="line">title: xxx</span><br><span class="line">tags: xxx</span><br><span class="line">categories: xxx</span><br><span class="line">description: xxx</span><br><span class="line">date: 2018/7/12 22:00:00</span><br><span class="line">---</span><br><span class="line">注:冒号后面必须要有空格 这是yaml语法的规定</span><br></pre></td></tr></tbody></table></figure>
 
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2019/06/23/搭建自己的博客/参数列表.jpg" alt="参数列表" title>
+                </div>
+                <div class="image-caption">参数列表</div>
+            </figure>
+
+<p>其中，分类和标签需要区别一下，分类具有顺序性和层次性，也就是说 <code>Foo, Bar</code> 不等于 <code>Bar, Foo</code>；而标签没有顺序和层次。</p>
+<p>菜单栏</p>
+<p>其中，About这个你是找不到网页的，因为你的文章中没有about这个东西。如果你想要的话，可以执行命令</p>
+<p>hexo new page about</p>
+<p>它就会在根目录下source文件夹中新建了一个about文件夹，以及index.md，在index.md中写上你想要写的东西，就可以在网站上展示出来了。</p>
 <p>图片的位置：</p>
 <p>参考：<a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html#hexo%E7%AE%80%E4%BB%8B" target="_blank" rel="noopener">https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html#hexo%E7%AE%80%E4%BB%8B</a></p>
+<p><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029" target="_blank" rel="noopener">https://blog.csdn.net/sinat_37781304/article/details/82729029</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -364,16 +379,16 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-06-23T06:43:11.011Z" itemprop="dateUpdated">2019-06-23 14:43:11</time>
+    最終更新：<time datetime="2019-06-23T07:37:13.335Z" itemprop="dateUpdated">2019-06-23 15:37:13</time>
 </span>
 
 
         
-        原文链接：<a href="/2019/06/23/搭建自己的博客/" target="_blank" rel="external">http://yoursite.com/2019/06/23/搭建自己的博客/</a>
+        原文链接：<a href="/2019/06/23/搭建自己的博客/" target="_blank" rel="external">https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/</a>
         
     </div>
     <footer>
-        <div onclick="location.href='http://yoursite.com'">
+        <div onclick="location.href='https://qianlongshenyong.github.io'">
             <img src="/img/avatar.jpg" alt="peter">
             <a>peter</a>
         </div>
@@ -401,7 +416,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/06/23/搭建自己的博客/&title=《搭建自己的博客》 — 潜龙慎用&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/&title=《搭建自己的博客》 — 潜龙慎用&pic=https://qianlongshenyong.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -411,22 +426,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/06/23/搭建自己的博客/&title=《搭建自己的博客》 — 潜龙慎用&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/&title=《搭建自己的博客》 — 潜龙慎用&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/06/23/搭建自己的博客/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《搭建自己的博客》 — 潜龙慎用&url=http://yoursite.com/2019/06/23/搭建自己的博客/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《搭建自己的博客》 — 潜龙慎用&url=https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/&via=https://qianlongshenyong.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/06/23/搭建自己的博客/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -466,7 +481,7 @@
             <i class="icon icon-lg icon-copyright"></i>
             2019
             <i class="icon icon-lg icon-heart"></i>
-            <a href="http://yoursite.com">tomotoes.com</a>
+            <a href="https://qianlongshenyong.github.io">tomotoes.com</a>
             <br/>
             Power by
             <a href="https://hexo.io/" target="_blank" rel="external nofollow">Hexo</a>&nbsp;·&nbsp;
@@ -496,7 +511,7 @@
         </span>
         <br/>
 
-        <span class="license">This blog is licensed under a <a rel="license" rel="external nofollow" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        <span class="license">このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
     </div>
 </footer>
 
@@ -539,7 +554,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/06/23/搭建自己的博客/&title=《搭建自己的博客》 — 潜龙慎用&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/&title=《搭建自己的博客》 — 潜龙慎用&pic=https://qianlongshenyong.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -549,22 +564,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/06/23/搭建自己的博客/&title=《搭建自己的博客》 — 潜龙慎用&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/&title=《搭建自己的博客》 — 潜龙慎用&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/06/23/搭建自己的博客/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《搭建自己的博客》 — 潜龙慎用&url=http://yoursite.com/2019/06/23/搭建自己的博客/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《搭建自己的博客》 — 潜龙慎用&url=https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/&via=https://qianlongshenyong.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/06/23/搭建自己的博客/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://qianlongshenyong.github.io/2019/06/23/搭建自己的博客/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -575,7 +590,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p class="wechatshare">扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJUlEQVR42u3awY6DMAxFUf7/p5ntSBXtfTYgxblZVYWGHBZubOc48Dj/jfTO82Ncfc+fUhwyZMhYlkGm+5w6XVCKiakyZMjYgHEVwb5/TmH8Kn+WDBkyZPSpfIkk0MuQIUMGCaDk6vf505llyJAhI01B05BKUll+/w25uAwZMhZk8Kr7+58f6W/IkCFjKcYZDr7hI3em4fVyVTJkyBjNqLUw001kv9mAXpAMGTJGM9LgyBedBmi+QfzxXBkyZAxi1MIcKZzVQmexYSBDhowNGLVifZrK8kCcVthkyJAxm8EDaO3gBW9nppvUo/Y/IEOGjAUZJMjyJdb2afwFXQZoGTJkbMPohMJ+oY281suZZciQMZrBS/DpNpF/0y/DyZAhYzaDNxF5IzM9QsF/++NAmAwZMoYy3iyQPV6SkyFDxlBGrW1JQjNPa3lQliFDxp6MNGlMl3jXDPE9MmTIGMrgrUc+aXp044ZgLUOGjKGMtDHQSVx5y5OX3mTIkLEPo5aI8kZC5xAGeokyZMjYgPFEq7LWBkgPdsiQIWMHBm8W1rZ3b84pQ4aMeYwzHHyb2Cnxk7AuQ4aMfRhpupi2DfgBL1L6Ly5dhgwZIxgkyBJAmtb2WwvBv4cMGTJGMMjD+OGJWgshbgaQCzJkyNiSwdsJ/WMcAViGDBky2okrL5/xDagMGTJ2Y6RJbC0E85fC1yBDhowdGLXUsTNd7YjYDR0PGTJkrMf4A91TJ81hlYzGAAAAAElFTkSuQmCC" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACuklEQVR42u3awU4kMQwEUP7/p9kr0m4PVXYyoNXrE4LWdF4jxZ5yPj7i6/PL9fU3T399fc/f19Oznp54+MLDw8NbLP31R+e82Sc8rW3zsvDw8PDu8fKP3u/Grz/5danI14yHh4f323ibjb5tl/Hw8PD+J95sEW2EMWvB8fDw8G7z8sZ3E8K2QXASbRzLWvDw8PBiXh4u/J6fr8z38PDw8A6Fre0W3x5BSNr04Wrx8PDwLvDyxeWtdn6wIG+XZ+vEw8PDez8v/6o/2+jbYjALf/Hw8PBu8Gahw2zLThrrA8cF9pkKHh4e3sunJ1/48zFYPio7S/pmvoeHh4d3iDdsTA+N09rwdzW1w8PDwzvEy7fazdHV5HjWLIYoAl88PDy8C7xNpHtjuFV8J8iLDR4eHt4FXrKItoTcKwztoA4PDw9vz0tGUO3Wvwkd8peyOhOBh4eHt+Dth16bjTt/NfkKH/+HeHh4eId4bQw6W0q7reev75vCg4eHh/dDvKQtThZxOC8JnoWHh4d3g9femse1eQlpY5G8ROHh4eG9hzdrkdvIYHNAYfj5eHh4eId4eda7b743RaUtOdFkDA8PD2/N2xwbbaOEJCbetNH/KAx4eHh4F3jt4KqNcTcxxOroAB4eHt5RXttA51t8PaBavIioLOHh4eEd5SVD+veMr9oXHa0cDw8P7xoviVnzUVYS7Lbxcf4PwMPDw3sPbxakbuLaZNH5PY934uHh4R3lfZZXnm209+QNdPFXPDw8vAu8/MqXOCs8+aGutpjh4eHh3eC14/k2tsgLzD7SfRyA4eHh4V3gtRt6wtgfHRhGt3kigoeHh/cWXvuANuzYHEf4ZgCGh4eH92t47UGE/Cltg36lMODh4eGVG/dm6DWLJGZHtQ7EuHh4eHgxr/3CnzTBs2KTLG54OAAPDw/vDO8Pk8t9gjZBbXkAAAAASUVORK5CYII=" alt="微信分享二维码">
 </div>
 
 
@@ -667,7 +682,7 @@ $("#name").bumpyText();
 
 /* 网站运行时间 */
 setInterval(function () {
-	setTime("2017/10/11");
+	setTime("2019/6/23");
 }, 1000);
 
 /* 文章块的淡出 */
