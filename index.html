@@ -43,7 +43,7 @@
 <meta property="og:title" content="潜龙慎用">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="潜龙慎用">
-<meta property="og:locale" content="default">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="潜龙慎用">
     
@@ -118,16 +118,12 @@
             
       <div class="nav2">
           
-              <a class="nav2item" data-title="Email" href="mailto:1755811882@qq.com" target="_parent"title="Email" >
+              <a class="nav2item" data-title="Email" href="mailto:1320005085@qq.com" target="_parent"title="Email" >
                 <i class="icon icon-lg icon-envelope-o envelope-o"></i>
               </a>
           
-              <a class="nav2item" data-title="Github" href="https://github.com/tomotoes" target="_blank"title="Github" >
+              <a class="nav2item" data-title="Github" href="https://github.com/qianlongshenyong" target="_blank"title="Github" >
                 <i class="icon icon-lg icon-github github"></i>
-              </a>
-          
-              <a class="nav2item" data-title="微博" href="https://weibo.com/u/6179399347" target="_blank"title="微博" >
-                <i class="icon icon-lg icon-weibo weibo"></i>
               </a>
           
 
@@ -153,7 +149,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Búsqueda">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -196,7 +192,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a href="/2019/06/23/搭建自己的博客/">No title</a>
+      <a href="/2019/06/23/搭建自己的博客/">搭建自己的博客</a>
     </h3>
   
 
@@ -204,7 +200,7 @@
 
 
      <div class="post-meta">
-        <time class="post-time" title="2019-06-23 14:09:23" datetime="2019-06-23T06:09:23.981Z"  itemprop="datePublished">2019-06-23</time>
+        <time class="post-time" title="2019-06-23 00:00:00" datetime="2019-06-22T16:00:00.000Z"  itemprop="datePublished">2019-06-23</time>
 
     </div>
 
@@ -295,14 +291,37 @@
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-filter-github-emojis --save</span><br></pre></td></tr></tbody></table></figure>
 
 <p>安装完成后再次运行hexo s</p>
+<h2 id="开启页面"><a href="#开启页面" class="headerlink" title="开启页面"></a>开启页面</h2><h3 id="标签页"><a href="#标签页" class="headerlink" title="标签页"></a>标签页</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></tbody></table></figure>
+
+<p>修改 hexo/source/tags/index.md 的元数据</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">layout: tags</span><br><span class="line">comments: false</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="分类页"><a href="#分类页" class="headerlink" title="分类页"></a>分类页</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></tbody></table></figure>
+
+<p>修改 hexo/source/categories/index.md 的元数据</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">layout: categories</span><br><span class="line">comments: false</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="关于页"><a href="#关于页" class="headerlink" title="关于页"></a>关于页</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></tbody></table></figure>
+
+<p>修改 hexo/source/about/index.md 的元数据</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">layout: about</span><br><span class="line">comments: true</span><br><span class="line">reward: false</span><br></pre></td></tr></tbody></table></figure>
+
 <h2 id="根据需求修改主题的配置"><a href="#根据需求修改主题的配置" class="headerlink" title="根据需求修改主题的配置"></a>根据需求修改主题的配置</h2><ol>
 <li><p>修改 `D:\blog_config.yml</p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: </span><br><span class="line">subtitle:</span><br><span class="line">description:</span><br><span class="line">keywords:</span><br><span class="line">author: peter</span><br><span class="line">emial: 1320005085@qq.com</span><br><span class="line">url:</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>保存预览</p>
 </li>
-<li></li>
+<li><p><code>npm install –save hexo-deployer-git</code></p>
+</li>
+<li><p><code>hexo d –g</code></p>
+</li>
 </ol>
+<p>文件开头</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">---</span><br><span class="line">title: xxx</span><br><span class="line">tags: xxx</span><br><span class="line">categories: xxx</span><br><span class="line">description: xxx</span><br><span class="line">date: 2018/7/12 22:00:00</span><br><span class="line">---</span><br><span class="line">注:冒号后面必须要有空格 这是yaml语法的规定</span><br></pre></td></tr></tbody></table></figure>
+
+<p>图片的位置：</p>
+<p>参考：<a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html#hexo%E7%AE%80%E4%BB%8B" target="_blank" rel="noopener">https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html#hexo%E7%AE%80%E4%BB%8B</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -325,59 +344,15 @@
     
         <div class="post-more-div">
             <a href="/2019/06/23/搭建自己的博客/" class="post-more waves-button">
-                Leer más
+                Continue reading...
             </a>
         </div>
     </div>
     
-</article>
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li></ul>
 
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-hello-world"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/2019/06/23/hello-world/">Hello World</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2019-06-23 13:30:15" datetime="2019-06-23T05:30:15.979Z"  itemprop="datePublished">2019-06-23</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-    
-        <div class="post-more-div">
-            <a href="/2019/06/23/hello-world/" class="post-more waves-button">
-                Leer más
-            </a>
-        </div>
     </div>
     
 </article>
@@ -394,7 +369,7 @@
     <div class="footer-content">
         <span class="power">
             <i class="icon icon-lg icon-copyright"></i>
-            2017
+            2019
             <i class="icon icon-lg icon-heart"></i>
             <a href="http://yoursite.com">tomotoes.com</a>
             <br/>
@@ -426,7 +401,7 @@
         </span>
         <br/>
 
-        <span class="license">Este blog está licenciado bajo una <a rel="license" rel="external nofollow" href="https://creativecommons.org/licenses/by/4.0/">licencia internacional Creative Commons Attribution 4.0</a>.</span>
+        <span class="license">This blog is licensed under a <a rel="license" rel="external nofollow" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
     </div>
 </footer>
 
