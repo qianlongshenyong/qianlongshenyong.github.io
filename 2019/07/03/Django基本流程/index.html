@@ -79,13 +79,13 @@
 
 
 
-<meta name="description" content="1 设计表结构 注：mysql的安装与使用  2 配置数据库2.1 默认SQLite数据库打开mysite/settings.py配置文件，这是整个Django项目的设置中心。Django默认使用SQLite数据库，因为Python源生支持SQLite数据库，所以你无须安装任何程序，就可以直接使用它。 123456789# Database# https://docs.djangoproject.">
+<meta name="description" content="1 设计表结构 注：mysql的安装与使用">
 <meta name="keywords" content="django">
 <meta property="og:type" content="article">
 <meta property="og:title" content="django基本流程">
 <meta property="og:url" content="https://qianlongshenyong.github.io/2019/07/03/Django基本流程/index.html">
 <meta property="og:site_name" content="潜龙慎用">
-<meta property="og:description" content="1 设计表结构 注：mysql的安装与使用  2 配置数据库2.1 默认SQLite数据库打开mysite/settings.py配置文件，这是整个Django项目的设置中心。Django默认使用SQLite数据库，因为Python源生支持SQLite数据库，所以你无须安装任何程序，就可以直接使用它。 123456789# Database# https://docs.djangoproject.">
+<meta property="og:description" content="1 设计表结构 注：mysql的安装与使用">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://qianlongshenyong.github.io/2019/07/03/Django基本流程/1562133052512.png">
 <meta property="og:image" content="https://qianlongshenyong.github.io/2019/07/03/Django基本流程/1562133768975.png">
@@ -130,10 +130,10 @@
 <meta property="og:image" content="https://qianlongshenyong.github.io/2019/07/03/Django基本流程/1562218787510.png">
 <meta property="og:image" content="https://qianlongshenyong.github.io/2019/07/03/Django基本流程/1562220797530.png">
 <meta property="og:image" content="https://qianlongshenyong.github.io/2019/07/03/Django基本流程/1562230502899.png">
-<meta property="og:updated_time" content="2019-07-07T09:47:19.353Z">
+<meta property="og:updated_time" content="2019-07-14T07:14:19.247Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="django基本流程">
-<meta name="twitter:description" content="1 设计表结构 注：mysql的安装与使用  2 配置数据库2.1 默认SQLite数据库打开mysite/settings.py配置文件，这是整个Django项目的设置中心。Django默认使用SQLite数据库，因为Python源生支持SQLite数据库，所以你无须安装任何程序，就可以直接使用它。 123456789# Database# https://docs.djangoproject.">
+<meta name="twitter:description" content="1 设计表结构 注：mysql的安装与使用">
 <meta name="twitter:image" content="https://qianlongshenyong.github.io/2019/07/03/Django基本流程/1562133052512.png">
 
 
@@ -467,6 +467,8 @@
       
         <h1 id="1-设计表结构"><a href="#1-设计表结构" class="headerlink" title="1 设计表结构"></a>1 设计表结构</h1><p><img src="/2019/07/03/Django基本流程/1562133052512.png" alt="1562133052512"></p>
 <p>注：mysql的安装与使用 </p>
+<a id="more"></a>
+
 <h1 id="2-配置数据库"><a href="#2-配置数据库" class="headerlink" title="2 配置数据库"></a>2 配置数据库</h1><h2 id="2-1-默认SQLite数据库"><a href="#2-1-默认SQLite数据库" class="headerlink" title="2.1 默认SQLite数据库"></a>2.1 默认SQLite数据库</h2><p>打开<code>mysite/settings.py</code>配置文件，这是整个Django项目的设置中心。Django默认使用SQLite数据库，因为Python源生支持SQLite数据库，所以你无须安装任何程序，就可以直接使用它。</p>
 <figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Database</span></span><br><span class="line"><span class="comment"># https://docs.djangoproject.com/en/2.2/ref/settings/#databases</span></span><br><span class="line"></span><br><span class="line">DATABASES = {</span><br><span class="line">    <span class="string">'default'</span>: {</span><br><span class="line">        <span class="string">'ENGINE'</span>: <span class="string">'django.db.backends.sqlite3'</span>,</span><br><span class="line">        <span class="string">'NAME'</span>: os.path.join(BASE_DIR, <span class="string">'db.sqlite3'</span>),</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
@@ -823,7 +825,7 @@
   <p><span>本文标题:</span><a href="/2019/07/03/Django基本流程/">django基本流程</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 潜龙慎用 的个人博客">潜龙慎用</a></p>
   <p><span>发布时间:</span>2019年07月03日 - 16:07</p>
-  <p><span>最后更新:</span>2019年07月07日 - 17:07</p>
+  <p><span>最后更新:</span>2019年07月14日 - 15:07</p>
   <p><span>原始链接:</span><a href="/2019/07/03/Django基本流程/" title="django基本流程">https://qianlongshenyong.github.io/2019/07/03/Django基本流程/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qianlongshenyong.github.io/2019/07/03/Django基本流程/" aria-label="复制成功！"></i></span>
   </p>
